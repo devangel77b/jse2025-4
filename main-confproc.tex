@@ -1,0 +1,126 @@
+\documentclass[letterpaper,11pt,electronic,headers=exceptpdf,papers=countpages,twoside,linkcolor=blue,urlcolor=blue]{confproc}
+
+\renewcommand{\procpdfauthor}{Dennis Evangelista, Manalapan High School}
+\renewcommand{\procpdftitle}{Journal of Science \& Engineering}
+\renewcommand{\procchead}{}
+\renewcommand{\proclhead}{}
+\renewcommand{\proccfoot}{\thepage}
+
+\author{\procpdfauthor}
+\title{\procpdftitle}
+\date{February xx, 2026}
+\renewcommand{\PAPERPATH}{.}
+%\renewcommand{\paperauthorstyle}{\texorpdfstring{\break}{, }}
+
+\makeindex
+
+\usepackage{pdfpages}
+\usepackage{helvet,mathptmx}
+%\renewcommand{\contentsname}{{\normalfont\sffamily Journal of\medskip~}\\{\normalfont\Huge Science \& Engineering}}
+\renewcommand{\contentsname}{}
+\usepackage{verse}
+
+\begin{document}
+\frontmatter
+\setcounter{page}{1}
+\pdfbookmark[0]{Preamble}{preamble}
+\pdfbookmark[0]{Cover}{cover}
+%\maketitle
+\index{Sustermans, Justus}
+\includepdf[pages=1]{cover}
+\newpage
+\input{masthead.tex}
+\otherpagestyle
+\pdfbookmark[0]{Table of Contents}{toc}
+\tableofcontents
+\addtocontents{toc}{{\normalfont\sffamily\Large Journal of\medskip~}\\{\normalfont\Huge Science \& Engineering}\medskip\\}
+\makeatletter
+\addtocontents{toc}{Volume 2, Number 2, \@date\bigskip\\}
+\makeatother
+\addtocontents{toc}{\emph{From the cover:} In this issue, we salute Galileo Galilei (1564-1642) who revolutionized science and developed the experimental method. We consider objects falling under the influence of gravity, as well as objects rolling on an inclined plane. We examine the kinematics of motion in these two cases, putting various hypotheses of motion to the test. \emph{In nullius verba,} we will let evidence, and not authority, decide. \emph{Cover image: \href{https://en.wikipedia.org/wiki/File:Galileo_Galilei_(1564-1642)_RMG_BHC2700.tiff}{Justus Sustermans, Portrait of Galileo Galilei, circa 1640, oil and wood on canvas, Royal Museums Greenwich.}} \bigskip\\}
+
+% Haiku here
+\input{insidejse.tex}
+
+\mainmatter
+\setcounter{page}{28}
+
+% Next line is a hack necessary to not waste pages
+\renewcommand{\cleardoublepage}{\clearpage}
+
+\procpaper[%
+title={Gravitational acceleration affects falling objects equally},
+author={Sejal Nagrani, Julia Bawar, and Kelly Su},
+index={\index{Nagrani, Sejal}\index{Bawar, Julia}\index{Su, Kelly}},
+]{/nagrani/nagrani}
+
+\procpaper[%
+title={Investigation of free fall using bottles of water and rocks},
+author={Nimya Badmin, Andrew Dolgin, Julia Khabinskiy, Kyle Koping, and Ella Pechersky},
+index={\index{Badmin, Nimya}\index{Dolgin, Andrew}\index{Khabinskiy, Julia}\index{Koping, Kyle}\index{Pechersky, Ella}},
+]{/khabinskiy/khabinskiy}
+
+\procpaper[%
+title={The effect of initial vertical position on velocity at which an object strikes the ground},
+author={Saanvi Dakwale, Samantha Hein, Reece Wallace, and Sashank Yellapragada},
+index={\index{Dakwale, Saanvi}\index{Hein, Samantha}\index{Wallace, Reece}\index{Yellapragada, Sashank}},
+]{/yellapragada/yellapragada}
+
+\procpaper[%
+title={Analyzing Galileo's distance-time relationship for rolling motion on an inclined plane},
+author={Ishaan Sharma, Blaise DeMairo, and Alexander Liddawi},
+index={\index{Sharma, Ishaan}\index{DeMairo, Blaise}\index{Liddawi, Alexander}},
+]{/demairo/demairo}
+
+\procpaper[%
+title={Acceleration is constant during free fall},
+author={Mason Levine, Deven Khettry, Kaitlin Coulanges, and Rohan Dela Rosa},
+index={\index{Levine, Mason}\index{Khettry, Deven}\index{Coulanges, Kaitlin}\index{Dela Rosa, Rohan}},
+]{/delarosa/delarosa}
+
+\procpaper[%
+title={Downward acceleration is independent of mass during free fall},
+author={Omar Ahmadzada, Jacob Pawelek, Matthew Butch, and Timothy Chung},
+index={\index{Ahmadzada, Omar}\index{Pawelek, Jacob}\index{Butch, Matthew}\index{Chung, Timothy}},
+]{/chung/chung}
+
+\procpaper[%
+title={Observations of gravitational free fall during drop experiments support a quadratic model},
+author={Joseph Cardillo, Jake Croft, Bobby Kapoor, David Pevzner, Soham Sankritya, and Ashmaan Siddiqui},
+index={\index{Cardillo, Joseph}\index{Croft, Jake}\index{Kapoor, Bobby}\index{Pevzner, David}\index{Sankritya, Soham}\index{Siddiqui, Ashmaan}},
+]{/cardillo/cardillo}
+
+\procpaper[%
+title={Testing the independence of gravitational acceleration from mas: a comparative analysis of free-falling objects near Earth's surface},
+author={Lorenzo Brunie, Jacob Kadan, Ethan Sobel, and Tarun Ramesh},
+index={\index{Brunie, Lorenzo}\index{Kadan, Jacob}\index{Sobel, Ethan}\index{Ramesh, Tarun}},
+]{/brunie/brunie}
+
+\procpaper[%
+title={Objects fall with constant acceleration regardless of mass},
+author={Ayaan Hallur, Justin Chan, Mark Reznik, Paul Zlotnikov, and Joe Tiboni},
+index={\index{Hallur, Ayan}\index{Chan, Justin}\index{Reznik, Mark}\index{Zlotnikov, Paul}\index{Tiboni, Joe}},
+]{/reznik/reznik}
+
+\procpaper[%
+title={Investigating how air resistance influences the motion of a penny and a feather},
+author={Sarah Afzal, Shreena Desai, and Ansh Modani},
+index={\index{Afzal, Sarah}\index{Desai, Shreena}\index{Modani, Ansh}},
+]{/afzal/afzal}
+
+
+
+
+
+
+
+
+\backmatter
+%\bibliographystyle{plain}
+%\bibliography{\procbibfile}
+
+\insertindex
+
+% get on even page?!
+%\includepdf[pages=1]{main-confproc-old.pdf}
+\end{document}
