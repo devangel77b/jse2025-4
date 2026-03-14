@@ -28,3 +28,6 @@
 [submodule "427syellapragada-lab3"]
 	path = yellapragada
 	url = git@github.com:devangel77b/427syellapragada-lab3.git
+[submodule "jse-mechanics-template"]
+	path = jse-mechanics-template
+	url = git@github.com:devangel77b/jse-mechanics-template
